@@ -1,0 +1,115 @@
+{
+    "Description": "",
+    "ID": "a8e4eca90b9aada9ede8fdcdafbe01",
+    "Name": "BACnetAdapter",
+    "Permissions": {
+        "AllCollections": {
+            "Level": 0
+        },
+        "CodeServices": [
+            {
+                "Level": 1,
+                "Name": "bacnetDeviceUpdate",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "handleBACnetMQTT",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "sendToAnyPoint",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "testDeviceUpdateTriggers",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "updateSensorMetaData",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            }
+        ],
+        "Collections": [
+            {
+                "Columns": [],
+                "ID": "80a6f9910ba8abe8f39fd58fb37e",
+                "Items": [],
+                "Level": 3,
+                "Name": "80a6f9910ba8abe8f39fd58fb37e"
+            },
+            {
+                "Columns": [],
+                "ID": "aee4eca90bae8dde99ac9a90929b01",
+                "Items": [],
+                "Level": 3,
+                "Name": "BACnet Device Data"
+            },
+            {
+                "Columns": [],
+                "ID": "b2e4eca90bba8eba96b8c1d4e579",
+                "Items": [],
+                "Level": 5,
+                "Name": "BACnetControllers"
+            },
+            {
+                "Columns": [],
+                "ID": "a0ecec9d0bfca0a4baf0f6b789ab01",
+                "Items": [],
+                "Level": 5,
+                "Name": "a0ecec9d0bfca0a4baf0f6b789ab01"
+            },
+            {
+                "Columns": [],
+                "ID": "c0fed1900bacafd9c1a1d4a2cbf101",
+                "Items": [],
+                "Level": 3,
+                "Name": "c0fed1900bacafd9c1a1d4a2cbf101"
+            },
+            {
+                "Columns": [],
+                "ID": "e6bcf9910b84b7aad4d7fee7d8c201",
+                "Items": [],
+                "Level": 5,
+                "Name": "e6bcf9910b84b7aad4d7fee7d8c201"
+            },
+            {
+                "Columns": [],
+                "ID": "e8e5ec9d0bc4f79ec193eb92b0fa01",
+                "Items": [],
+                "Level": 3,
+                "Name": "e8e5ec9d0bc4f79ec193eb92b0fa01"
+            }
+        ],
+        "Deployments": {
+            "Level": 0
+        },
+        "DevicesList": {
+            "Level": 7
+        },
+        "EdgesList": {
+            "Level": 0
+        },
+        "MsgHistory": {
+            "Level": 13
+        },
+        "Portals": [],
+        "Push": {
+            "Level": 0
+        },
+        "SystemServices": null,
+        "Timers": {
+            "Level": 0
+        },
+        "Topics": [],
+        "Triggers": {
+            "Level": 0
+        },
+        "UsersList": {
+            "Level": 0
+        }
+    }
+}
