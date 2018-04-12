@@ -1,0 +1,1214 @@
+{
+    "config": {
+        "RULE_BUILDER-e4691b4d-829c-49b6-9351-97f50dbab8de": {
+            "ACTION_TYPE": {},
+            "ALERTS": {},
+            "CURRENT_DEF_KEYS": {},
+            "CURRENT_STEP": {},
+            "MODAL_PROPS": {},
+            "QUERY_CONDITION": {},
+            "SECONDARY_MODAL_PROPS": null,
+            "SHOW_MODAL": false,
+            "TRIGGER_SOURCE": {},
+            "alertFields": {},
+            "currentRule": null,
+            "providerFields": {},
+            "ruleName": {},
+            "ruleState": {}
+        },
+        "cols": {
+            "lg": 12,
+            "md": 10,
+            "sm": 6,
+            "xs": 4,
+            "xxs": 2
+        },
+        "currentBreakpointForFlyoutWidgets": "lg",
+        "currentBreakpointForPanes": "lg",
+        "currentBreakpointsForWidgets": {
+            "1c1d15e2-448d-4789-b137-ffc9a342905f": "lg",
+            "83f95d66-34c2-4205-9f54-93a4fc7f47c1": "lg",
+            "c82cf1c2-7177-4246-a4ab-98c6e085eee3": "lg",
+            "dd9ded02-1f93-44a7-b6ca-53a26d862a5e": "lg",
+            "dfe453dd-cf20-4496-a4e1-26adb7948151": "lg"
+        },
+        "datasources": {
+            "47b35add-9fea-4a3a-ad82-57668257b431": {
+                "id": "47b35add-9fea-4a3a-ad82-57668257b431",
+                "name": "LightData",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": true,
+                    "code_name": "portal_LightData",
+                    "payload": "{}",
+                    "refresh_interval": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "5a9122b8-588c-4199-95fa-73aaec5cd7ed": {
+                "id": "5a9122b8-588c-4199-95fa-73aaec5cd7ed",
+                "name": "Alerts",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": true,
+                    "TOPIC_NAME": "alerts"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "9dc0d9b0-2d12-4ac4-91fc-9b2bb1f36a94": {
+                "id": "9dc0d9b0-2d12-4ac4-91fc-9b2bb1f36a94",
+                "name": "Sensor Types",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "code_name": "portal_SensorTypes",
+                    "payload": "{\"floor\":\"26\", \"description\":     \"Zone Temperature\"}",
+                    "refresh_interval": 0,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "c30b424d-395f-4c91-a19a-84558a18c89c": {
+                "id": "c30b424d-395f-4c91-a19a-84558a18c89c",
+                "name": "currentSensorsandGroups",
+                "settings": {
+                    "datasources": [
+                        "fc67e22e-a090-404c-a8cf-79afe66f8d1a",
+                        "cc2064a7-9cf5-4a50-9443-c96de11e3fea"
+                    ]
+                },
+                "type": "DATASOURCE_AGGREGATOR"
+            },
+            "cc2064a7-9cf5-4a50-9443-c96de11e3fea": {
+                "id": "cc2064a7-9cf5-4a50-9443-c96de11e3fea",
+                "name": "SensorGroup",
+                "settings": {
+                    "code_name": "portal_SensorsByGroup",
+                    "payload": "{\"floor\":\"26\", \"group\":\"01\"}",
+                    "refresh_interval": 0,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "d137dff9-171e-4bba-8019-9ac78fb77a48": {
+                "id": "d137dff9-171e-4bba-8019-9ac78fb77a48",
+                "name": "SelectedSensor",
+                "settings": {},
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "da74c7b1-e550-4384-90ce-43b6c06fb14c": {
+                "id": "da74c7b1-e550-4384-90ce-43b6c06fb14c",
+                "name": "Floor",
+                "settings": {},
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "dbe8e0e0-5183-42eb-8a50-cf1974e47350": {
+                "id": "dbe8e0e0-5183-42eb-8a50-cf1974e47350",
+                "name": "updateSensorCoordinates",
+                "settings": {
+                    "code_name": "updateSensorFloorPlanCoordinates",
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "fc67e22e-a090-404c-a8cf-79afe66f8d1a": {
+                "id": "fc67e22e-a090-404c-a8cf-79afe66f8d1a",
+                "name": "currentData",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "code_name": "portal_CurrentData",
+                    "payload": "{\"description\":\"Zone Temperature\",\"floor\":26}",
+                    "refresh_interval": 0,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "fe7a31a2-55f7-491d-afcb-bf8ecbcc657c": {
+                "id": "fe7a31a2-55f7-491d-afcb-bf8ecbcc657c",
+                "name": "Assets",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "collection_name": "assets",
+                    "refresh_interval": 0
+                },
+                "type": "CB_COLLECTION"
+            }
+        },
+        "externalScripts": [],
+        "flyoutWidgetLayout": {
+            "lg": [
+                {
+                    "h": 9,
+                    "i": "5a761755-a6c0-47e2-bfe1-69b117868954",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 9,
+                    "i": "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 9
+                }
+            ],
+            "md": [],
+            "sm": [],
+            "xs": [
+                {
+                    "h": 9,
+                    "i": "5a761755-a6c0-47e2-bfe1-69b117868954",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 36,
+                    "i": "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 9
+                }
+            ],
+            "xxs": [
+                {
+                    "h": 9,
+                    "i": "5a761755-a6c0-47e2-bfe1-69b117868954",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 36,
+                    "i": "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 9
+                }
+            ]
+        },
+        "headerWidgetLayout": {
+            "lg": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 42,
+                    "x": 16,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 46,
+                    "x": 185,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "moved": false,
+                    "static": false,
+                    "w": 74,
+                    "x": 324,
+                    "y": 0
+                }
+            ],
+            "md": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 39,
+                    "x": 154,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 83,
+                    "y": 0
+                }
+            ],
+            "sm": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 34,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 37,
+                    "x": 117,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 64,
+                    "y": 0
+                }
+            ],
+            "xs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 28,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 31,
+                    "x": 71,
+                    "y": 1
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 40,
+                    "y": 0
+                }
+            ],
+            "xxs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 32,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 33,
+                    "x": 47,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "w": 36,
+                    "x": 27.5,
+                    "y": 0
+                }
+            ]
+        },
+        "pages": {
+            "8a33c57c-fc26-46ed-91af-d96a3c723c28": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "8a33c57c-fc26-46ed-91af-d96a3c723c28",
+                "isChild": false,
+                "isParam": false,
+                "name": "Main",
+                "path": ""
+            },
+            "Home": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "Home",
+                "isChild": false,
+                "isParam": false,
+                "name": "Home",
+                "path": ""
+            },
+            "e1971ff9-6ae2-42a1-8014-4fcc2ef89e1a": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "e1971ff9-6ae2-42a1-8014-4fcc2ef89e1a",
+                "isChild": false,
+                "isParam": false,
+                "name": "Business_Rules",
+                "path": ""
+            }
+        },
+        "paneGridWidgetLayouts": {
+            "1c1d15e2-448d-4789-b137-ffc9a342905f": {
+                "lg": [
+                    {
+                        "h": 26,
+                        "i": "f2d46d4a-8604-4b2b-b514-bc3e09ca32f7",
+                        "minH": 3,
+                        "moved": false,
+                        "static": false,
+                        "w": 7,
+                        "x": 5,
+                        "y": 0
+                    },
+                    {
+                        "h": 6,
+                        "i": "9947d737-8b02-464f-a74e-e714949bbe2f",
+                        "minH": 3,
+                        "moved": false,
+                        "static": false,
+                        "w": 5,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "83f95d66-34c2-4205-9f54-93a4fc7f47c1": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "3d8a3389-d25f-435d-b608-db2a396905fb",
+                        "w": 13,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "c82cf1c2-7177-4246-a4ab-98c6e085eee3": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "e4691b4d-829c-49b6-9351-97f50dbab8de",
+                        "minH": 3,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "dd9ded02-1f93-44a7-b6ca-53a26d862a5e": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "dc45793e-0e65-44de-b85e-d7169304813b",
+                        "minH": 3,
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "dfe453dd-cf20-4496-a4e1-26adb7948151": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "456aad59-f043-4b29-9244-eb6c72d1dbfa",
+                        "minH": 3,
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            }
+        },
+        "paneLayouts": {
+            "8a33c57c-fc26-46ed-91af-d96a3c723c28": {
+                "lg": [
+                    {
+                        "h": 4,
+                        "i": "960184ed-62dc-4737-86fd-bb6848bac188",
+                        "moved": false,
+                        "static": false,
+                        "w": 12,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "Home": {
+                "lg": [
+                    {
+                        "h": 5,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 6,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 5,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "821bf164-6d62-4c85-9372-394baa70341f",
+                        "moved": false,
+                        "static": false,
+                        "w": 12,
+                        "x": 0,
+                        "y": 5
+                    },
+                    {
+                        "h": 5,
+                        "i": "ab083a96-7a56-4662-896b-896e53d93fd8",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 6,
+                        "y": 0
+                    }
+                ],
+                "md": [
+                    {
+                        "h": 6,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 10,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 10,
+                        "x": 0,
+                        "y": 6
+                    }
+                ],
+                "sm": [
+                    {
+                        "h": 5,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 6,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 6,
+                        "x": 0,
+                        "y": 5
+                    }
+                ],
+                "xs": [
+                    {
+                        "h": 4,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 4
+                    }
+                ],
+                "xxs": [
+                    {
+                        "h": 2,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 7,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 2
+                    }
+                ]
+            },
+            "e1971ff9-6ae2-42a1-8014-4fcc2ef89e1a": {
+                "lg": [],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            }
+        },
+        "panes": {
+            "0611d7bb-36b1-4e5f-90ab-aad632f00698": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "dd9ded02-1f93-44a7-b6ca-53a26d862a5e",
+                    "tabIds": [
+                        "dd9ded02-1f93-44a7-b6ca-53a26d862a5e"
+                    ],
+                    "tabTitles": {
+                        "dd9ded02-1f93-44a7-b6ca-53a26d862a5e": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "0d2dfbd0-3443-41a0-abec-040afbe8edeb": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "83f95d66-34c2-4205-9f54-93a4fc7f47c1",
+                    "tabIds": [
+                        "83f95d66-34c2-4205-9f54-93a4fc7f47c1"
+                    ],
+                    "tabTitles": {
+                        "83f95d66-34c2-4205-9f54-93a4fc7f47c1": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "821bf164-6d62-4c85-9372-394baa70341f": {
+                "customPaneId": "",
+                "header": {
+                    "hide": false,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "821bf164-6d62-4c85-9372-394baa70341f",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "c82cf1c2-7177-4246-a4ab-98c6e085eee3",
+                    "tabIds": [
+                        "c82cf1c2-7177-4246-a4ab-98c6e085eee3"
+                    ],
+                    "tabTitles": {
+                        "c82cf1c2-7177-4246-a4ab-98c6e085eee3": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "960184ed-62dc-4737-86fd-bb6848bac188": {
+                "customPaneId": "",
+                "header": {
+                    "hide": false,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "960184ed-62dc-4737-86fd-bb6848bac188",
+                "pageId": "8a33c57c-fc26-46ed-91af-d96a3c723c28",
+                "tabInfo": {
+                    "activeTab": "1c1d15e2-448d-4789-b137-ffc9a342905f",
+                    "tabIds": [
+                        "1c1d15e2-448d-4789-b137-ffc9a342905f"
+                    ],
+                    "tabTitles": {
+                        "1c1d15e2-448d-4789-b137-ffc9a342905f": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "ab083a96-7a56-4662-896b-896e53d93fd8": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "ab083a96-7a56-4662-896b-896e53d93fd8",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "dfe453dd-cf20-4496-a4e1-26adb7948151",
+                    "tabIds": [
+                        "dfe453dd-cf20-4496-a4e1-26adb7948151"
+                    ],
+                    "tabTitles": {
+                        "dfe453dd-cf20-4496-a4e1-26adb7948151": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "secondary"
+            }
+        },
+        "savedPortalExists": true,
+        "theme": {
+            "graph": {
+                "four": "#E8E7C6",
+                "one": "#6E8592",
+                "three": "#DBA5A8",
+                "two": "#6E93A8"
+            },
+            "info": {
+                "display_name": "Standard",
+                "name": "STANDARD_THEME"
+            },
+            "items": {
+                "main": {
+                    "header": {
+                        "burgerBars": {
+                            "fontColor": "#f5f5f5"
+                        },
+                        "dropdown": {
+                            "fontColor": "#f5f5f5",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "styles": {
+                            "backgroundColor": "#25a5a3"
+                        }
+                    },
+                    "panes": {
+                        "flyout": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#25a5a3"
+                            }
+                        },
+                        "primary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#25a5a3"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#1e8482",
+                                "backgroundColor": "#92d2d1",
+                                "fontColor": "#000000"
+                            }
+                        },
+                        "secondary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#92d2d1"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#1e8482",
+                                "backgroundColor": "#25a5a3",
+                                "fontColor": "#000000"
+                            }
+                        }
+                    },
+                    "portal": {
+                        "styles": {
+                            "backgroundColor": "#ffffff"
+                        }
+                    },
+                    "widgets": {
+                        "BAR_CHART_WIDGET_COMPONENT": {
+                            "barColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ],
+                            "brushStroke": "#25a5a3",
+                            "legendColor": "#000000"
+                        },
+                        "BUTTON_WIDGET_COMPONENT": {
+                            "backgroundColor": "#f5f5f5",
+                            "backgroundHoverColor": "#c2c2c2",
+                            "borderColor": "#cccccc",
+                            "fontColor": "#000000"
+                        },
+                        "FILTERABLE_LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "FORM_WIDGET_COMPONENT": {
+                            "cardBackgroundColor": "#f5f5f5",
+                            "fontColor": "#000000",
+                            "sliderColor": "#6E8592",
+                            "titleColor": "#000000",
+                            "toggleColor": "#6E8592"
+                        },
+                        "GOOGLE_MAP_WIDGET_COMPONENT": {
+                            "mapTheme": ""
+                        },
+                        "GROUPING_LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "LINE_CHART_WIDGET_COMPONENT": {
+                            "brushStroke": "#25a5a3",
+                            "legendColor": "#000000",
+                            "lineColors": [
+                                {
+                                    "stroke": "#6E8592"
+                                },
+                                {
+                                    "stroke": "#6E93A8"
+                                },
+                                {
+                                    "stroke": "#DBA5A8"
+                                },
+                                {
+                                    "stroke": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#25a5a3",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "PIE_CHART_WIDGET_COMPONENT": {
+                            "cells": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "RADIAL_GAUGE_WIDGET_COMPONENT": {
+                            "backgroundColor": "#c2c2c2",
+                            "progressColor": "#25a5a3"
+                        },
+                        "SPEEDOMETER_WIDGET": {
+                            "arrowColor": "#000000",
+                            "sectionColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "TEXT_WIDGET_COMPONENT": {
+                            "fontColor": "#000000",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "TOGGLE_WIDGET": {
+                            "backgroundColor": "#c2c2c2",
+                            "fontColor": "#000000",
+                            "offColor": "#ffffff",
+                            "onColor": "#25a5a3"
+                        }
+                    }
+                }
+            },
+            "palette": {
+                "darkPrimary": "#c2c2c2",
+                "darkSecondary": "#1e8482",
+                "defaultPrimary": "#f5f5f5",
+                "defaultSecondary": "#25a5a3",
+                "lightPrimary": "#ffffff",
+                "lightSecondary": "#92d2d1",
+                "primaryText": "#000000",
+                "secondaryText": "#000000"
+            }
+        },
+        "upgradesPerformed": {
+            "flyoutTitleUpgrade": true,
+            "headerBrandUpgrade": true,
+            "headerTitleUpgrade": true,
+            "widgetResizeUpgrade": true
+        },
+        "widgets": {
+            "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7": {
+                "externalScripts": [],
+                "id": "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#25a5a3",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": null,
+                        "id": "d137dff9-171e-4bba-8019-9ac78fb77a48",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "\nconsole.log(JSON.stringify(Object.assign({},this.widget,{\"floor\":26})));\ndatasources.currentData.settings().payload=JSON.stringify({description: this.widget.description,\"floor\":26});\ndatasources.currentData.sendData({description:this.widget.description,\"floor\":26});\nreturn this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "9dc0d9b0-2d12-4ac4-91fc-9b2bb1f36a94",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if(this.datasource === undefined){return;}\nvar ddo = [];\nvar len = this.datasource.results.length;\nfor(var i = 0; i \u003c len; i++){\n    ddo.push({\"label\": this.datasource.results[i] , \"value\": {description: this.datasource.results[i]}});\n}\nreturn ddo;"
+                        }
+                    },
+                    "titleColor": "#000000",
+                    "trackingColumnName": "description"
+                },
+                "tab": null,
+                "type": "LIST_WIDGET_COMPONENT"
+            },
+            "3d8a3389-d25f-435d-b608-db2a396905fb": {
+                "externalScripts": [],
+                "id": "3d8a3389-d25f-435d-b608-db2a396905fb",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "fc67e22e-a090-404c-a8cf-79afe66f8d1a",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": "html,body,#wrapper {\n        height:100%;\n        margin:0;\n        padding:0;\n}\n#dataMap {\n        position:relative;\n}\nlabel.disabled { color: pink; }",
+                                "HTML": "\u003cdiv class=\"controls\" style=\"text-align: center\"\u003e\n\t\u003cinput type=\"checkbox\" checked onClick=\"toggleHVAC(this.checked);\"\n\t\t   id=\"toggleHVAC\"/\u003e\u003clabel for=\"toggleHVAC\"\u003e\u0026nbsp; HVAC \u0026nbsp;\u003c/label\u003e\n    \u003cinput type=\"checkbox\" onClick=\"toggleLight(this.checked);\"\n\t\t   id=\"toggleLight\"/\u003e\u003clabel for=\"toggleLight\"\u003e\u0026nbsp; Lights \u0026nbsp; \u003c/label\u003e\n\t\u003cinput type=\"checkbox\" disabled onClick=\"togglePower(this.checked);\"\n\t\t   id=\"toggleLight\"/\u003e\u003clabel class=\"disabled\" for=\"togglePower\"\u003e\u0026nbsp; Power \u0026nbsp; \u003c/label\u003e\n\t\u003cinput type=\"checkbox\" disabled onClick=\"togglePeople(this.checked);\"\n\t\t   id=\"toggleLight\"/\u003e\u003clabel class=\"disabled\" for=\"togglePeople\"\u003e\u0026nbsp; People \u0026nbsp; \u003c/label\u003e\n\u003c/div\u003e\n\u003ccanvas id=\"dataMap\"\u003e\u003c/canvas\u003e\n",
+                                "JavaScript": "//JavaScript\n//Global Initialization\nfunction Floor26 () {\n    if (!ClearBlade.Floor26) {\n        ClearBlade.Floor26 = {\n            allowCoordinateUpdates: false,\n            databoxHeight: 15,\n            databoxWidth: 60,\n            imgURL: \"https://s3.amazonaws.com/uploads.hipchat.com/76688/4619737/itJvIwLJHDaYHk5/26th%20floor.png\",\n            primary_display_textcolor: \"#000000\",\n            showSensorName: false,\n            dataTextStyle: \"bold 12px Verdana\",\n            deviceTextStyle: \"bold 10px Verdana\",\n            ds_sensorGroup: \"SensorGroup\",\n            ds_xy: \"updateSensorCoordinates\",\n            dsCurrent: \"currentData\",\n            dsSensorGroup: \"SensorGroup\",\n            SCALE: 1,\n            blockUpdates: false\n        };\n    }\n\n    //ClearBlade.Floor26.currentData = this.datasource;\n    ClearBlade.Floor26.currentData = datasources.currentData.latestData() ;\n    ClearBlade.Floor26.LightData = datasources.LightData.latestData() ;\n    //ClearBlade.Floor26.Assets = datasources.Assets.latestData() ; \n\n    var stage;\n    var bgChild ; // this is the main map\n    var hvacChild = [] ; // holder for all HVAC icons\n    var lightChild = [] ; // holder for lighting\n\n    var calculateAspectRatioFit = function(srcWidth, srcHeight, maxWidth, maxHeight) {\n        var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);\n        var rtnWidth = srcWidth * ratio;\n        var rtnHeight = srcHeight * ratio;\n        return { width: rtnWidth, height: rtnHeight };\n    };\n\n    window.addEventListener('resize', function(event) {\n        drawCanvas();\n    });\n\n    var drawCanvas = function() {\n        stage = new createjs.Stage(\"dataMap\");\n        stage.removeAllChildren();\n      //  stage.enableMouseOver(5); //Required for enabling mouseover events\n        var bgImg = document.createElement(\"img\");\n        //Hack to make the sizing work to the HTMLWidget size\n        stage.canvas.width = stage.canvas.parentElement.parentElement.parentElement.parentElement.clientWidth;\n        stage.canvas.height = stage.canvas.parentElement.parentElement.parentElement.parentElement.clientHeight;\n\n        //console.log (foo[0].data);\n        //var rawDataString = ClearBlade.Floor26.Assets[0].data.image;\n        //bgImg.src = \"data:image/png+xml;base64,\" + rawDataString ; // ClearBlade.Floor26.imgBlob;\n\n        bgImg.src = ClearBlade.Floor26.imgURL;\n        bgImg.onload = function() {\n            var bg = new createjs.Bitmap(bgImg);\n            var backgroundImageSize = calculateAspectRatioFit(bgImg.width, bgImg.height, stage.canvas.width, stage.canvas.height);\n            //console.log(\"SCALE:\" + backgroundImageSize.width / bgImg.width);\n            ClearBlade.Floor26.SCALE = backgroundImageSize.width / bgImg.width;\n            bg.scaleX = backgroundImageSize.width / bgImg.width;\n            bg.scaleY = backgroundImageSize.width / bgImg.width;\n            stage.removeAllChildren();\n            bgChild = stage.addChild(bg);  // save the image for redrawing\n            drawHvacData();  // default is HVAC data turned on\n            //drawLightData();\n            if (!ClearBlade.Floor26.blockUpdates)\n                stage.update();\n        };\n    };\n\n    var drawHvacData = function() {\n        //draw the icons\n        if (ClearBlade.Floor26.currentData !== undefined) {\n            for (i = 0; i \u003c ClearBlade.Floor26.currentData.results.length; i++) {\n                drawDataWidget(ClearBlade.Floor26.currentData.results[i]);\n            }\n        }\n        stage.update();\n    };\n\n    var drawLightData = function() {\n        //draw the icons\n        console.log(\"in LightData\");\n        if (ClearBlade.Floor26.LightData !== undefined) {\n            console.log(\"drawLightData: LightData length=\" + ClearBlade.Floor26.LightData.results.length);\n            for (i = 0; i \u003c ClearBlade.Floor26.LightData.results.length; i++) {\n                drawDataWidget(ClearBlade.Floor26.LightData.results[i]);\n            }\n        }\n        stage.update();\n    };\n\n    //var toggleLight = function(value) {\n    window.toggleLight = function(value) {\n        //draw the icons\n        if (value) {\n            drawLightData();\n        } else {\n            var i;\n            var ctr = 0;\n            for ( i in lightChild ) {\n                ctr++;\n                stage.removeChild(lightChild[i]) ;\n                delete lightChild[i] ;\n            }\n            console.log(\"toggleLight: LightChild length=\" + ctr );\n            stage.update();\n        }\n    };\n\n    //var toggleLight = function(value) {\n    window.toggleHVAC = function(value) {\n        //draw the icons\n        if (value) {\n            drawHvacData();\n        } else {\n            var i;\n            var ctr = 0;\n            for ( i in hvacChild ) {\n                ctr++;\n                stage.removeChild(hvacChild[i]) ;\n                delete hvacChild[i] ;\n            }\n            stage.update();\n        }\n    };\n\n    var drawDataWidget = function(textObj) {\n        var deviceDetailsContainer;\n        var boxheight = ClearBlade.Floor26.databoxHeight;\n        var boxwidth = ClearBlade.Floor26.databoxWidth;\n        stage.mouseMoveOutside = false;\n        var shape = new createjs.Shape();\n        var wcMain = new createjs.Container();\n        var dataPointContainer = new createjs.Container();\n        //Create Container for displaying value\n        if (textObj.type == \"light\" ) {\n            shape.graphics.beginStroke(\"black\").beginFill(textObj.backgroundColor).drawCircle(0, 0, boxheight);\n        } else {\n            shape.graphics.beginStroke(\"black\").beginFill(textObj.backgroundColor).drawRect(0, 0, boxwidth, boxheight);\n        }\n        var dv = \"\";\n        if (isNaN(textObj.present_value))\n            dv = textObj.present_value;\n        else if ( textObj.type == \"light\" ) {\n            dv = textObj.present_value ;\n        } else\n            dv = parseFloat(textObj.present_value).toFixed(2);\n        //Value Object\n        var valueText = new createjs.Text(dv, ClearBlade.Floor26.dataTextStyle, ClearBlade.Floor26.primary_display_textcolor);\n        valueText.textAlign = \"center\";\n        valueText.textBaseline = \"middle\";\n        if ( textObj.type != \"light\" ) {\n            valueText.x = boxwidth - boxwidth / 2;\n            valueText.y = boxheight - boxheight / 2;\n        }\n        dataPointContainer.addChild(shape, valueText);\n        //dataPointContainer.y = boxheight * i;\n        wcMain.addChild(dataPointContainer);\n        //Device Name Object\n        deviceDetailsContainer = new createjs.Text(textObj.name, ClearBlade.Floor26.deviceTextStyle, ClearBlade.Floor26.primary_display_textcolor);\n        deviceDetailsContainer.textAlign = \"center\";\n        deviceDetailsContainer.visible = ClearBlade.Floor26.showSensorName;\n        deviceDetailsContainer.x = (boxwidth - boxwidth / 2);\n        deviceDetailsContainer.y = (boxheight - boxheight / 2) + 7;\n        wcMain.addChild(deviceDetailsContainer);\n\n        wcMain.name = textObj.name;\n        wcMain.x = textObj.x * ClearBlade.Floor26.SCALE;\n        wcMain.y = textObj.y * ClearBlade.Floor26.SCALE;\n        wcMain.deviceData = textObj;\n\n        if ( textObj.type == \"light\" ) {\n            lightChild[textObj.name] = stage.addChild(wcMain);  // store the location in the global\n        } else {\n            hvacChild[textObj.name] = stage.addChild(wcMain);  // store the location in the global\n        }\n    \n        if (ClearBlade.Floor26.allowCoordinateUpdates) {\n            wcMain.on(\"pressmove\", function(evt) {\n                ClearBlade.Floor26.blockUpdates = true; //Block updating the view (causes a redraw)\n                evt.currentTarget.x = evt.stageX;\n                evt.currentTarget.y = evt.stageY;\n                this.children[(this.children.length - 1)].visible = true;\n                stage.update();\n            });\n\n            wcMain.on(\"pressup\", function(evt) {\n                if (ClearBlade.Floor26.allowCoordinateUpdates) {\n                    ClearBlade.Floor26.blockUpdates = false;\n                    evt.currentTarget.x = evt.stageX;\n                    evt.currentTarget.y = evt.stageY;\n                    this.children[(this.children.length - 1)].visible = ClearBlade.Floor26.showSensorName;\n                    stage.update();\n                    datasources[ClearBlade.Floor26.ds_xy].sendData({ \"name\": this.name, \"x\": evt.currentTarget.x / ClearBlade.Floor26.SCALE, \"y\": evt.currentTarget.y / ClearBlade.Floor26.SCALE });\n                }\n            });\n        } else {\n            wcMain.on(\"click\", function(evt) {\n                datasources[ClearBlade.Floor26.ds_sensorGroup].sendData({ \"floor\": this.deviceData.floor, \"group\": this.deviceData.groupid });\n            });\n        }\n\n        wcMain.on(\"mouseover\", function(evt) {\n            this.children[(this.children.length - 1)].visible = true;\n            stage.update();\n        });\n        wcMain.on(\"mouseout\", function(evt) {\n            this.children[(this.children.length - 1)].visible = false;\n            stage.update();\n        });\n        \n        //stage.update();\n    };\n    \n    drawCanvas();\n    \n} // end of Floor26\n\nhead.js([\"https://code.createjs.com/easeljs-0.8.2.min.js\"], Floor26);"
+                            }
+                        }
+                    }
+                },
+                "tab": "83f95d66-34c2-4205-9f54-93a4fc7f47c1",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "456aad59-f043-4b29-9244-eb6c72d1dbfa": {
+                "externalScripts": [],
+                "id": "456aad59-f043-4b29-9244-eb6c72d1dbfa",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "5a9122b8-588c-4199-95fa-73aaec5cd7ed",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".x-small {\n    font-size: 10px;\n}\n\n.btn-xs{\n    line-height:0.25rem;\n}\n\ntable{\n    padding: 0;\n    margin: 0;\n}\n.zonewarning {\n    background-color: #fee6ad;\n}",
+                                "HTML": "\u003cdiv class=\"container-fluid\"\u003e\n\u003cdiv class=\"row\"\u003e\n\u003cdiv class=\"col-sm-2 clearBtn\"\u003e\u003cbutton type=\"button\" onclick=\"clearAlerts()\" class=\"btn btn-secondary btn-sm\"\u003eClear all\u003c/button\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv id=\"header\" class=\"row\"\u003e\n    \u003c!--\u003cdiv class=\"no-items\"\u003eThere are no alerts.\u003c/div\u003e--\u003e\n\u003c/div\u003e\n\u003cdiv id=\"alert_parentTable\"\u003e\n    \u003cdiv id=\"alert_footer\"\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\n\n",
+                                "JavaScript": "//JavaScript\n//JavaScript\nwindow.clearAlerts = function() {\n  for (var i = $('#alert_parentTable').siblings().length - 1; i \u003e 1; i--) {\n    $('#alert_parentTable')\n      .siblings()\n      [i].remove();\n  }\n};\n\n// {   \"id\": 1,   \"alerttype\": \"Zone Temperature\",   \"groupid\": \"Group ID 26-24\",   \"status\": \"red\"}\n\ntry {\n  var ds = JSON.parse(this.datasource);\n  var row = document.createElement('div');\n  row.innerHTML =\n    `\u003cdiv class=\"alert\"\u003e \u003ci class=\"fa fa-exclamation-triangle\"\u003e\u003c/i\u003e \u003cspan\u003e \n    \u003ca href=\"#\" class=\"asset-name\" data-name='${ds.alerttype}, ${\n      ds.value\n    }'\u003e` +\n    ds.alerttype +\n    '\u003c/a\u003e in Group ID [' +\n    ds.groupid +\n    '] needs to be replaced\u003cb\u003e' +\n    '\u003c/b\u003e as of: ' +\n    new Date(Date.now()).toLocaleString() +\n    '\u003c/span\u003e \u003ci class=\"fa fa-times dimiss-alert\"\u003e\u003c/i\u003e';\n\n  document\n    .getElementById('alert_parentTable')\n    .parentNode.insertBefore(\n      row,\n      document.getElementById('alert_parentTable').nextSibling,\n    );\n} catch (ex) {\n  console.warn(ex);\n}\n//document.getElementById('alertTable').getElementsByTagName('tbody')[0].innerHTML+=record;\n\n$('.dimiss-alert').click((e) =\u003e {\n  e.currentTarget.parentElement.hidden = true;\n});\n$('.asset-name').click((e) =\u003e {\n  $(`button:contains(${e.currentTarget.dataset.name})`).click();\n});\n"
+                            }
+                        }
+                    }
+                },
+                "tab": "dfe453dd-cf20-4496-a4e1-26adb7948151",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "5a761755-a6c0-47e2-bfe1-69b117868954": {
+                "externalScripts": [],
+                "id": "5a761755-a6c0-47e2-bfe1-69b117868954",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#25a5a3",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "da74c7b1-e550-4384-90ce-43b6c06fb14c",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "datasources.currentData.settings().payload=JSON.stringify(Object.assign({},this.widget,datasources.SensorGroup.latestData()));\nreturn this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "force_data": null,
+                        "value": "return [{\"label\": \"Floor 26\", \"value\":{\"floor\": \"26\"}},{\"label\": \"Floor 27\", \"value\":{\"floor\": \"27\"}}];"
+                    },
+                    "titleColor": "#000000",
+                    "trackingColumnName": "floor"
+                },
+                "tab": null,
+                "type": "LIST_WIDGET_COMPONENT"
+            },
+            "9947d737-8b02-464f-a74e-e714949bbe2f": {
+                "externalScripts": [],
+                "id": "9947d737-8b02-464f-a74e-e714949bbe2f",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource;"
+                        },
+                        "value": {
+                            "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                            "HTML": "\u003cdiv class=\"text-center \"\u003e\n  \u003cimg style=\"max-width: 100%; height: auto;\" src=\"https://imgs.6sqft.com/wp-content/uploads/2016/05/04113300/Hudson-Yards-Master-Plan-Site.jpg\" /\u003e\n\u003c/div\u003e",
+                            "JavaScript": "//JavaScript\n"
+                        }
+                    }
+                },
+                "tab": "1c1d15e2-448d-4789-b137-ffc9a342905f",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "brand": {
+                "externalScripts": [],
+                "id": "brand",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "da74c7b1-e550-4384-90ce-43b6c06fb14c",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource.floor)\n    return \"Floor \" + this.datasource.floor;\nelse\n    return \"Floor 26\";"
+                        }
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "c1b80427-1eba-4e49-a75b-4bed39c882e5": {
+                "externalScripts": [],
+                "id": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#ffffff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "d137dff9-171e-4bba-8019-9ac78fb77a48",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return \"Device \" + this.datasource.description"
+                        }
+                    }
+                },
+                "tab": null,
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "dc45793e-0e65-44de-b85e-d7169304813b": {
+                "externalScripts": [],
+                "id": "dc45793e-0e65-44de-b85e-d7169304813b",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "cc2064a7-9cf5-4a50-9443-c96de11e3fea",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".x-small {\n    font-size: 10px;\n}\n\n.btn-xs{\n    line-height:0.25rem;\n}\n\ntable{\n    padding: 0;\n    margin: 0;\n}\n\ninput[type=\"numbers\"] {\n   height: 12px;\n   font-size: 10px;\n   line-height: 14px;\n}\n\n.table td {\n    padding: 0;\n    width: 100%;\n}\n",
+                                "HTML": "\u003cdiv id=\"listDiv\"\u003e\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\n//head.load(\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\");\nvar self = this;\nvar incrementerControl = function(defaultValue) {\n    var ic='\u003cinput type=\"numbers\" class=\"text-right\" value=\"' + parseFloat(defaultValue).toFixed(2) + '\"\u003e';\n    return ic;\n};\n\nvar aiControl = function(defaultValue) {\n    var ai = '\u003cselect class=\"\"\u003e';\n    switch (defaultValue) {\n        case 'active':\n            ai += '\u003coption selected\u003eactive\u003c/option\u003e';\n            ai += '\u003coption\u003einactive\u003c/option\u003e';\n            break;\n        default:\n            ai += '\u003coption\u003eactive\u003c/option\u003e';\n            ai += '\u003coption selected\u003einactive\u003c/option\u003e';\n    }\n    ai += '\u003c/select\u003e';\n    return ai;\n};\n\nvar isNumeric = function(n) {\n    return !isNaN(parseFloat(n)) \u0026\u0026 isFinite(n);\n};\n\nvar renderWidget=function() {\n    var ld;\n    var ds = self.datasource;\n    var tmp = \"\";\n    ld = document.getElementById(\"listDiv\");\n    if (ds.results) {\n        tmp = \"\u003cdiv\u003eGroup ID \" + ds.results[0].groupid + \"\u003cbutton type='button' class='btn btn-primary btn-xs float-right'\u003eSave Changes\u003c/button\u003e\u003c/div\u003e\";\n        tmp += \"\u003ctable class='table table-condensed table-striped table-hover table-responsive x-small'\u003e\";\n        for (var i = 0; i \u003c ds.results.length; i++) {\n            tmp += \"\u003ctr\u003e\u003ctd\u003e\" + ds.results[i].description + \"\u003c/td\u003e\u003ctd class='text-xs-right text-right'\u003e\";\n            if (isNumeric(ds.results[i].present_value)) {\n                tmp += incrementerControl(ds.results[i].present_value);\n            } else {\n                tmp += aiControl(ds.results[i].present_value);\n            }\n            tmp += \"\u003c/td\u003e\u003c/tr\u003e\";\n        }\n        tmp += \"\u003c/table\u003e\";\n        ld.innerHTML = tmp;\n        $('.selectpicker').selectpicker();\n    }\n};\n\nhead.load([\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css\"]);\nhead.js([\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\", \"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js\"], renderWidget);\n"
+                            }
+                        }
+                    }
+                },
+                "tab": "dd9ded02-1f93-44a7-b6ca-53a26d862a5e",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "e4691b4d-829c-49b6-9351-97f50dbab8de": {
+                "externalScripts": [],
+                "id": "e4691b4d-829c-49b6-9351-97f50dbab8de",
+                "props": {
+                    "allowCreate": true,
+                    "allowDelete": true,
+                    "allowEdit": true,
+                    "allowOnOff": true,
+                    "name": "Business_Rules"
+                },
+                "tab": "c82cf1c2-7177-4246-a4ab-98c6e085eee3",
+                "type": "RULE_BUILDER_WIDGET"
+            },
+            "f2d46d4a-8604-4b2b-b514-bc3e09ca32f7": {
+                "externalScripts": [],
+                "id": "f2d46d4a-8604-4b2b-b514-bc3e09ca32f7",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource;"
+                        },
+                        "value": {
+                            "CSS": "html,body,#wrapper {\n        width:100%;\n        margin:0;\n        padding:0;\n}\n#MainMap {\n        position:relative;\n}",
+                            "HTML": "\u003ccanvas id=\"MainMap\"\u003e\u003c/canvas\u003e",
+                            "JavaScript": "//JavaScript\n//Global Initialization\nfunction Building10 () {\n\n    if (!ClearBlade.Building10) {\n        ClearBlade.Building10 = {\n            allowCoordinateUpdates: false,\n            databoxHeight: 15,\n            databoxWidth: 60,\n            imgURL: \"https://cdn.modlar.com/photos/8773/img/s_1920_x/009_58bc3cee07e5b.jpg\",\n            primary_display_textcolor: \"#000000\",\n            showSensorName: false,\n            dataTextStyle: \"bold 12px Verdana\",\n            deviceTextStyle: \"bold 10px Verdana\",\n            ds_sensorGroup: \"SensorGroup\",\n            ds_xy: \"updateSensorCoordinates\",\n            dsCurrent: \"currentData\",\n            dsSensorGroup: \"SensorGroup\",\n            SCALE: 1,\n            AnimationTime: 500 ,   \n            elevationInterval: 20,\n            blockUpdates: false\n        };\n    }\n\n    var stage;\n    var bgChild ; // this is the main map\n    var elevatorChild = [] ; // holder for all elevator icons\n    \n    var calculateAspectRatioFit = function(srcWidth, srcHeight, maxWidth, maxHeight) {\n        var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);\n        var rtnWidth = srcWidth * ratio;\n        var rtnHeight = srcHeight * ratio;\n        return { width: rtnWidth, height: rtnHeight };\n    };\n\n    window.addEventListener('resize', function(event) {\n        drawCanvas();\n    });\n\n    var drawCanvas = function() {\n    \n        stage = new createjs.Stage(\"MainMap\");\n        stage.removeAllChildren();\n        // thie mouseover breaks a lot of things\n        //stage.enableMouseOver(5); //Required for enabling mouseover events\n        var bgImg = document.createElement(\"img\");\n        //Hack to make the sizing work to the HTMLWidget size\n        stage.canvas.width = stage.canvas.parentElement.parentElement.parentElement.parentElement.clientWidth;\n        stage.canvas.height = stage.canvas.parentElement.parentElement.parentElement.parentElement.clientHeight;\n \n        bgImg.src = ClearBlade.Building10.imgURL;\n        \n        bgImg.onload = function() {\n            var bg = new createjs.Bitmap(bgImg);\n            var backgroundImageSize = calculateAspectRatioFit(bgImg.width, bgImg.height, stage.canvas.width, stage.canvas.height);\n            //console.log (\"bg img width: \" + bgImg.width + \" height: \" + bgImg.height );\n            //console.log(\"SCALE:\" + backgroundImageSize.width / bgImg.width);\n            ClearBlade.Building10.SCALE = backgroundImageSize.width / bgImg.width;\n            bg.scaleX = backgroundImageSize.width / bgImg.width;\n            bg.scaleY = backgroundImageSize.width / bgImg.width;\n            stage.removeAllChildren();\n            bgChild = stage.addChild(bg);  // save the image for redrawing\n            \n            //drawElevatorData();  // default is Elevator data turned on\n\n            if (!ClearBlade.Building10.blockUpdates)\n                stage.update();\n        };\n        \n        loadElevators() ;  // load global array\n        createjs.Ticker.on (\"tick\", TickFunction) ;\n        createjs.Ticker.interval = ClearBlade.Building10.AnimationTime ; \n\n    };\n\n    var TickFunction = function (event) {\n    \n        var ctr = 0;\n        for ( var i in elevatorChild ) {  // blase the old elevator location\n            stage.removeChild(elevatorChild[i]) ;\n            delete elevatorChild[i] ;\n            ctr++ ;\n        }\n        //console.log (\"TickFunction: elevatorChild array length: \" + ctr );\n        //console.log (\"TickFunction: elevator array length: \" + elevator.length );\n        \n        for ( var i=0; i \u003c elevator.length; i++ ) {\n        \n            // move elevator\n            if ( elevator[i].y \u003c elevator[i].top \u0026\u0026 elevator[i].y \u003e= elevator[i].bottom \u0026\u0026 elevator[i].direction == \"down\" ) {  // lower the elevator\n                elevator[i].y = elevator[i].y + ClearBlade.Building10.elevationInterval ;\n            } else if ( elevator[i].y \u003e elevator[i].bottom \u0026\u0026 elevator[i].y \u003c= elevator[i].top \u0026\u0026 elevator[i].direction == \"up\" ) {  // raise the elevator\n               elevator[i].y = elevator[i].y - ClearBlade.Building10.elevationInterval ;\n            } else if ( elevator[i].y \u003e= elevator[i].top ) {\n                elevator[i].direction = \"up\";\n                elevator[i].y = elevator[i].y - ClearBlade.Building10.elevationInterval;\n            } else if ( elevator[i].y \u003c= elevator[i].bottom ) {\n                elevator[i].direction = \"down\" ;\n                elevator[i].y = elevator[i].y + ClearBlade.Building10.elevationInterval ;\n            }\n\n            //console.log (\"TickFunction: elevator[\" + i + \"][x,y] = [\" + elevator[i].x + \"][ \" + elevator[i].y + \"]\" );\n\n        } // end of for \n        \n        drawElevatorData();\n        \n    };\n      \n    // temp object for 1 elevator\n    // x as 950 is good for one elevator. Y as 800 is the bottom\n    // y as 265 is the top\n     \n    var elevator = [] ;\n    \n    var loadElevators = function () {\n    \n        if ( elevator.length \u003e 0 ) // assume if the array longer than 0, than it exists (should be 2)\n            return ;    // note that this will get called on every screen resize and will grow this if you don't do this\n        var e1 = {         \n                \"backgroundColor\": \"#FF000050\",  \n                \"buildingside\": null,\n                \"description\": \"Elevator\",\n                \"type\": \"elevator\",\n                \"groupid\": \"1\",\n                \"direction\": \"down\",\n                \"name\": \"e1\",\n                \"present_value\": \"moving\",\n                \"top\": 800,\n                \"bottom\": 265,\n                \"x\": 950,\n                \"y\": 265\n        };\n        elevator.push(e1) ;\n        // second one\n        var e2 = JSON.parse(JSON.stringify(e1));  // copy the first one\n        e2.x = 900;\n        e2.name = \"e2\";\n        e2.direction = \"up\"\n        e2.y = e2.top ;  // start at the bottom\n        elevator.push(e2) ;\n    }\n    \n     \n    var drawElevatorData = function() {\n        //draw the icons\n        //console.log (\"drawElevatorData: elevator array length: \" + elevator.length );\n        for (i = 0; i \u003c elevator.length; i++) {\n            drawDataWidget(elevator[i]);\n        }\n        stage.update();\n    };\n\n    var drawDataWidget = function(textObj) {\n        var deviceDetailsContainer;\n        var boxheight = ClearBlade.Building10.databoxHeight;\n        var boxwidth = ClearBlade.Building10.databoxWidth;\n        stage.mouseMoveOutside = false;\n        var shape = new createjs.Shape();\n        var wcMain = new createjs.Container();\n        var dataPointContainer = new createjs.Container();\n        //Create Container for displaying value\n\n        shape.graphics.beginStroke(\"black\").beginFill(textObj.backgroundColor).drawRect(0, 0, boxheight, boxwidth);\n\n        //Value Object\n        var dv = \"\";\n        dv = textObj.name;\n        var valueText = new createjs.Text(dv, ClearBlade.Building10.dataTextStyle, ClearBlade.Building10.primary_display_textcolor);\n        valueText.textAlign = \"center\";\n        valueText.textBaseline = \"middle\";\n\n        // invert these for the vertical aligned elevator box\n        valueText.x = boxheight - boxheight / 2;\n        valueText.y = boxwidth - boxwidth / 2;\n\n        dataPointContainer.addChild(shape, valueText);\n        //dataPointContainer.y = boxheight * i;\n        wcMain.addChild(dataPointContainer);\n        //Device Name Object\n        deviceDetailsContainer = new createjs.Text(textObj.name, ClearBlade.Building10.deviceTextStyle, ClearBlade.Building10.primary_display_textcolor);\n        deviceDetailsContainer.textAlign = \"center\";\n        deviceDetailsContainer.visible = ClearBlade.Building10.showSensorName;\n        deviceDetailsContainer.x = (boxwidth - boxwidth / 2);\n        deviceDetailsContainer.y = (boxheight - boxheight / 2) + 7;\n        wcMain.addChild(deviceDetailsContainer);\n\n        wcMain.name = textObj.name;\n        wcMain.x = textObj.x * ClearBlade.Building10.SCALE;\n        wcMain.y = textObj.y * ClearBlade.Building10.SCALE;\n        wcMain.deviceData = textObj;\n\n        elevatorChild[textObj.name] = stage.addChild(wcMain);  // store the location in the global\n    };\n   \n    drawCanvas();\n    \n} // end of Building10\n\nhead.js([\"https://code.createjs.com/easeljs-0.8.2.min.js\"], Building10);"
+                        }
+                    }
+                },
+                "tab": "1c1d15e2-448d-4789-b137-ffc9a342905f",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "flyoutTitle": {
+                "externalScripts": [],
+                "id": "flyoutTitle",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 30,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return portalTitle"
+                    }
+                },
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "title": {
+                "externalScripts": [],
+                "id": "title",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return \"Building HVAC Monitor\""
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            }
+        }
+    },
+    "description": "",
+    "last_updated": "09 Apr 18 21:49 UTC",
+    "name": "Dev HVAC Monitor",
+    "system_key": "a4e4eca90be28397ecefd4b0c39d01",
+    "type": "v2"
+}
