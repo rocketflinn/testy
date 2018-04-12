@@ -1,0 +1,10 @@
+{
+    "current_version": 1,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "false",
+    "name": "updateFloorID",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "updateFloorID.js"
+}
