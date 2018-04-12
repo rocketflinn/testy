@@ -1,0 +1,14 @@
+{
+    "current_version": 25,
+    "dependencies": "log,clearblade",
+    "logging_enabled": "true",
+    "name": "portal_SensorsByGroup",
+    "params": [],
+    "permissions": {
+        "Administrator": 1,
+        "Anonymous": 1,
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "portal_SensorsByGroup.js"
+}
