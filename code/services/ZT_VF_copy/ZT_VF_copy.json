@@ -1,0 +1,10 @@
+{
+    "current_version": 3,
+    "dependencies": "",
+    "logging_enabled": "false",
+    "name": "ZT_VF_copy",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "ZT_VF_copy.js"
+}
