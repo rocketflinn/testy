@@ -1,0 +1,13 @@
+{
+    "current_version": 21,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "false",
+    "name": "portal_LightData",
+    "params": [],
+    "permissions": {
+        "Anonymous": 1,
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "portal_LightData.js"
+}
