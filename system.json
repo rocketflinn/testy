@@ -1,0 +1,10 @@
+{
+    "auth": true,
+    "deployments": [],
+    "description": "",
+    "messaging_url": "platform.clearblade.com:1883",
+    "name": "Demo--Intelligent Buildings",
+    "platform_url": "https://presales.clearblade.com",
+    "system_key": "a4e4eca90be28397ecefd4b0c39d01",
+    "system_secret": "A4E4ECA90BEAA59DBFBBD391F472"
+}
