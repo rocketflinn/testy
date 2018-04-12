@@ -1,0 +1,13 @@
+{
+    "current_version": 18,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "true",
+    "name": "RB_Temperature_Zone_Temperature_Value_Failure_Service_0",
+    "params": [],
+    "permissions": {
+        "Anonymous": 1,
+        "Authenticated": 1
+    },
+    "run_user": "dee6eda90b8097b9d6f583cab602",
+    "source": "RB_Temperature_Zone_Temperature_Value_Failure_Service_0.js"
+}
