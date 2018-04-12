@@ -1,0 +1,16 @@
+{
+    "current_version": 2,
+    "dependencies": "clearblade,log,promisesLibrary",
+    "logging_enabled": "false",
+    "name": "loadSensorHistoryByDescription",
+    "params": [
+        "description"
+    ],
+    "permissions": {
+        "Administrator": 1,
+        "portalAdmin": 1,
+        "portalUser": 1
+    },
+    "run_user": "",
+    "source": "loadSensorHistoryByDescription.js"
+}
