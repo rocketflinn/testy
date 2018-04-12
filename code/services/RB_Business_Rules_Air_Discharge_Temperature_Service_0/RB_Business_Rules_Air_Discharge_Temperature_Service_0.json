@@ -1,0 +1,10 @@
+{
+    "current_version": 1,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "false",
+    "name": "RB_Business_Rules_Air_Discharge_Temperature_Service_0",
+    "params": [],
+    "permissions": {},
+    "run_user": "dee6eda90b8097b9d6f583cab602",
+    "source": "RB_Business_Rules_Air_Discharge_Temperature_Service_0.js"
+}
