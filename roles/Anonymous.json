@@ -1,0 +1,145 @@
+{
+    "Description": "Default role that is applied to all unauthenticated users",
+    "ID": "Anonymous",
+    "Name": "Anonymous",
+    "Permissions": {
+        "AllCollections": {
+            "Level": 0
+        },
+        "CodeServices": [
+            {
+                "Level": 1,
+                "Name": "RB_Temperature_Zone_Temperature_Value_Failure_Service_0",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "ZoneTemperatureValueFailure",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "loadSensorDataHistory",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 0,
+                "Name": "loadSensorList",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "portalUpdateFloorPlanCoordinates",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "portal_CurrentData",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "portal_LightData",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "portal_SendAlert",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "portal_SensorHistoryByType",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "portal_SensorTypes",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "portal_SensorsByGroup",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "readSensorTypes",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "updateSensorFloorPlanCoordinates",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 0,
+                "Name": "zoneTemp26East",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            }
+        ],
+        "Collections": [
+            {
+                "Columns": [],
+                "ID": "aee4eca90bae8dde99ac9a90929b01",
+                "Items": [],
+                "Level": 1,
+                "Name": "BACnet Device Data"
+            },
+            {
+                "Columns": [],
+                "ID": "a4ecec9d0bae8fb1f5e182ba92f301",
+                "Items": [],
+                "Level": 1,
+                "Name": "a4ecec9d0bae8fb1f5e182ba92f301"
+            },
+            {
+                "Columns": [],
+                "ID": "e8e5ec9d0bc4f79ec193eb92b0fa01",
+                "Items": [],
+                "Level": 1,
+                "Name": "e8e5ec9d0bc4f79ec193eb92b0fa01"
+            },
+            {
+                "Columns": [],
+                "ID": "bae4eca90bc4b79edb85ada3939701",
+                "Items": [],
+                "Level": 1,
+                "Name": "sensorMetaData"
+            }
+        ],
+        "Deployments": {
+            "Level": 0
+        },
+        "DevicesList": {
+            "Level": 1
+        },
+        "EdgesList": {
+            "Level": 0
+        },
+        "MsgHistory": {
+            "Level": 0
+        },
+        "Portals": [
+            {
+                "Level": 1,
+                "Name": "HVAC Monitor",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            }
+        ],
+        "Push": {
+            "Level": 0
+        },
+        "SystemServices": null,
+        "Timers": {
+            "Level": 0
+        },
+        "Topics": [],
+        "Triggers": {
+            "Level": 0
+        },
+        "UsersList": {
+            "Level": 0
+        }
+    }
+}
