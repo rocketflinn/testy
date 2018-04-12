@@ -1,0 +1,13 @@
+{
+    "description": "Edge for Platform",
+    "last_seen_version": "3.12-hotfix1",
+    "location": null,
+    "mac_address": null,
+    "name": "ubuntu-yardarm",
+    "policy_name": null,
+    "resolver_func": null,
+    "sync_edge_tables": "",
+    "system_key": "a4e4eca90be28397ecefd4b0c39d01",
+    "system_secret": "A4E4ECA90BEAA59DBFBBD391F472",
+    "token": "rgn5YEQ082Luco37oUA6xVR"
+}
