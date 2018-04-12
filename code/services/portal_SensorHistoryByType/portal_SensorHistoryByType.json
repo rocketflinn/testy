@@ -1,0 +1,14 @@
+{
+    "current_version": 3,
+    "dependencies": "log,clearblade,promisesLibrary",
+    "logging_enabled": "false",
+    "name": "portal_SensorHistoryByType",
+    "params": [],
+    "permissions": {
+        "Administrator": 1,
+        "Anonymous": 1,
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "portal_SensorHistoryByType.js"
+}
