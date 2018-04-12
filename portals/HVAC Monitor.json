@@ -1,0 +1,1043 @@
+{
+    "config": {
+        "RULE_BUILDER-6e618d66-055c-4c06-a63d-4432c9fe4162": {
+            "ACTION_TYPE": {},
+            "ALERTS": {},
+            "CURRENT_DEF_KEYS": {},
+            "CURRENT_STEP": {},
+            "MODAL_PROPS": {},
+            "QUERY_CONDITION": {},
+            "SECONDARY_MODAL_PROPS": null,
+            "SHOW_MODAL": false,
+            "TRIGGER_SOURCE": {},
+            "alertFields": {},
+            "currentRule": null,
+            "providerFields": {},
+            "ruleName": {},
+            "ruleState": {}
+        },
+        "cols": {
+            "lg": 12,
+            "md": 10,
+            "sm": 6,
+            "xs": 4,
+            "xxs": 2
+        },
+        "currentBreakpointForFlyoutWidgets": "lg",
+        "currentBreakpointForPanes": "lg",
+        "currentBreakpointsForWidgets": {
+            "7ed4e655-d1d9-4510-bd4e-902981f3272f": "lg",
+            "83f95d66-34c2-4205-9f54-93a4fc7f47c1": "lg",
+            "c4e050e8-e97f-4b07-a5a5-2317ea1ae4ba": "lg",
+            "dd9ded02-1f93-44a7-b6ca-53a26d862a5e": "lg"
+        },
+        "datasources": {
+            "6a4dcc91-7ab9-4e6b-9c8b-d42fafd251a8": {
+                "id": "6a4dcc91-7ab9-4e6b-9c8b-d42fafd251a8",
+                "name": "alerts",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": true,
+                    "TOPIC_NAME": "alerts"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "9dc0d9b0-2d12-4ac4-91fc-9b2bb1f36a94": {
+                "id": "9dc0d9b0-2d12-4ac4-91fc-9b2bb1f36a94",
+                "name": "Sensor Types",
+                "settings": {
+                    "code_name": "portal_SensorTypes",
+                    "payload": "{\"floor\":\"26\", \"description\":     \"Zone Temperature\"}",
+                    "refresh_interval": 0,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "c30b424d-395f-4c91-a19a-84558a18c89c": {
+                "id": "c30b424d-395f-4c91-a19a-84558a18c89c",
+                "name": "currentSensorsandGroups",
+                "settings": {
+                    "datasources": [
+                        "fc67e22e-a090-404c-a8cf-79afe66f8d1a",
+                        "cc2064a7-9cf5-4a50-9443-c96de11e3fea"
+                    ]
+                },
+                "type": "DATASOURCE_AGGREGATOR"
+            },
+            "cc2064a7-9cf5-4a50-9443-c96de11e3fea": {
+                "id": "cc2064a7-9cf5-4a50-9443-c96de11e3fea",
+                "name": "SensorGroup",
+                "settings": {
+                    "code_name": "portal_SensorsByGroup",
+                    "payload": "{\"floor\":\"26\", \"group\":\"01\"}",
+                    "refresh_interval": 0,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "d137dff9-171e-4bba-8019-9ac78fb77a48": {
+                "id": "d137dff9-171e-4bba-8019-9ac78fb77a48",
+                "name": "SelectedSensor",
+                "settings": {},
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "da74c7b1-e550-4384-90ce-43b6c06fb14c": {
+                "id": "da74c7b1-e550-4384-90ce-43b6c06fb14c",
+                "name": "Floor",
+                "settings": {},
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "dbe8e0e0-5183-42eb-8a50-cf1974e47350": {
+                "id": "dbe8e0e0-5183-42eb-8a50-cf1974e47350",
+                "name": "updateSensorCoordinates",
+                "settings": {
+                    "code_name": "updateSensorFloorPlanCoordinates",
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "fc67e22e-a090-404c-a8cf-79afe66f8d1a": {
+                "id": "fc67e22e-a090-404c-a8cf-79afe66f8d1a",
+                "name": "currentData",
+                "settings": {
+                    "code_name": "portal_CurrentData",
+                    "payload": "{\"description\":\"Zone Temperature\",\"floor\":26}",
+                    "refresh_interval": 0,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            }
+        },
+        "externalScripts": [],
+        "flyoutWidgetLayout": {
+            "lg": [
+                {
+                    "h": 9,
+                    "i": "5a761755-a6c0-47e2-bfe1-69b117868954",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 9,
+                    "i": "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 9
+                }
+            ],
+            "md": [],
+            "sm": [],
+            "xs": [
+                {
+                    "h": 9,
+                    "i": "5a761755-a6c0-47e2-bfe1-69b117868954",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 36,
+                    "i": "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 9
+                }
+            ],
+            "xxs": [
+                {
+                    "h": 9,
+                    "i": "5a761755-a6c0-47e2-bfe1-69b117868954",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 36,
+                    "i": "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7",
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 9
+                }
+            ]
+        },
+        "headerWidgetLayout": {
+            "lg": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 42,
+                    "x": 16,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 46,
+                    "x": 185,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "moved": false,
+                    "static": false,
+                    "w": 74,
+                    "x": 324,
+                    "y": 0
+                }
+            ],
+            "md": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 39,
+                    "x": 154,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 83,
+                    "y": 0
+                }
+            ],
+            "sm": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 34,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 37,
+                    "x": 117,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 64,
+                    "y": 0
+                }
+            ],
+            "xs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 28,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 31,
+                    "x": 71,
+                    "y": 1
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 40,
+                    "y": 0
+                }
+            ],
+            "xxs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 32,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 33,
+                    "x": 47,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                    "w": 36,
+                    "x": 27.5,
+                    "y": 0
+                }
+            ]
+        },
+        "pages": {
+            "Home": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "Home",
+                "isChild": false,
+                "isParam": false,
+                "name": "Home",
+                "path": ""
+            }
+        },
+        "paneGridWidgetLayouts": {
+            "7ed4e655-d1d9-4510-bd4e-902981f3272f": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "6e618d66-055c-4c06-a63d-4432c9fe4162",
+                        "minH": 3,
+                        "w": 13,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "83f95d66-34c2-4205-9f54-93a4fc7f47c1": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "3d8a3389-d25f-435d-b608-db2a396905fb",
+                        "w": 13,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "c4e050e8-e97f-4b07-a5a5-2317ea1ae4ba": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "a036d71e-19e4-4925-b1c3-a62e28c79944",
+                        "minH": 3,
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "dd9ded02-1f93-44a7-b6ca-53a26d862a5e": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "8c6c4b8e-1486-4ac1-a04b-0d80b6856952",
+                        "w": 13,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            }
+        },
+        "paneLayouts": {
+            "Home": {
+                "lg": [
+                    {
+                        "h": 5,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 6,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 7,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 6,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "73d027b2-e408-45ec-9479-0dc12902e7a6",
+                        "moved": false,
+                        "static": false,
+                        "w": 12,
+                        "x": 0,
+                        "y": 7
+                    },
+                    {
+                        "h": 2,
+                        "i": "fc07fbbc-7631-4e86-9770-060dcf7ef500",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 0
+                    }
+                ],
+                "md": [
+                    {
+                        "h": 6,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 10,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 10,
+                        "x": 0,
+                        "y": 6
+                    }
+                ],
+                "sm": [
+                    {
+                        "h": 5,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 6,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 6,
+                        "x": 0,
+                        "y": 5
+                    }
+                ],
+                "xs": [
+                    {
+                        "h": 4,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 4
+                    }
+                ],
+                "xxs": [
+                    {
+                        "h": 2,
+                        "i": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 7,
+                        "i": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 2
+                    }
+                ]
+            }
+        },
+        "panes": {
+            "0611d7bb-36b1-4e5f-90ab-aad632f00698": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "0611d7bb-36b1-4e5f-90ab-aad632f00698",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "dd9ded02-1f93-44a7-b6ca-53a26d862a5e",
+                    "tabIds": [
+                        "dd9ded02-1f93-44a7-b6ca-53a26d862a5e"
+                    ],
+                    "tabTitles": {
+                        "dd9ded02-1f93-44a7-b6ca-53a26d862a5e": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "0d2dfbd0-3443-41a0-abec-040afbe8edeb": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "0d2dfbd0-3443-41a0-abec-040afbe8edeb",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "83f95d66-34c2-4205-9f54-93a4fc7f47c1",
+                    "tabIds": [
+                        "83f95d66-34c2-4205-9f54-93a4fc7f47c1"
+                    ],
+                    "tabTitles": {
+                        "83f95d66-34c2-4205-9f54-93a4fc7f47c1": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "73d027b2-e408-45ec-9479-0dc12902e7a6": {
+                "customPaneId": "",
+                "header": {
+                    "hide": false,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "73d027b2-e408-45ec-9479-0dc12902e7a6",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "7ed4e655-d1d9-4510-bd4e-902981f3272f",
+                    "tabIds": [
+                        "7ed4e655-d1d9-4510-bd4e-902981f3272f"
+                    ],
+                    "tabTitles": {
+                        "7ed4e655-d1d9-4510-bd4e-902981f3272f": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "fc07fbbc-7631-4e86-9770-060dcf7ef500": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": "Alerts"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "fc07fbbc-7631-4e86-9770-060dcf7ef500",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "c4e050e8-e97f-4b07-a5a5-2317ea1ae4ba",
+                    "tabIds": [
+                        "c4e050e8-e97f-4b07-a5a5-2317ea1ae4ba"
+                    ],
+                    "tabTitles": {
+                        "c4e050e8-e97f-4b07-a5a5-2317ea1ae4ba": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            }
+        },
+        "savedPortalExists": true,
+        "theme": {
+            "graph": {
+                "four": "#E8E7C6",
+                "one": "#6E8592",
+                "three": "#DBA5A8",
+                "two": "#6E93A8"
+            },
+            "info": {
+                "display_name": "Standard",
+                "name": "STANDARD_THEME"
+            },
+            "items": {
+                "main": {
+                    "header": {
+                        "burgerBars": {
+                            "fontColor": "#f5f5f5"
+                        },
+                        "dropdown": {
+                            "fontColor": "#f5f5f5",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "styles": {
+                            "backgroundColor": "#25a5a3"
+                        }
+                    },
+                    "panes": {
+                        "flyout": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#25a5a3"
+                            }
+                        },
+                        "primary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#25a5a3"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#1e8482",
+                                "backgroundColor": "#92d2d1",
+                                "fontColor": "#000000"
+                            }
+                        },
+                        "secondary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#92d2d1"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#1e8482",
+                                "backgroundColor": "#25a5a3",
+                                "fontColor": "#000000"
+                            }
+                        }
+                    },
+                    "portal": {
+                        "styles": {
+                            "backgroundColor": "#ffffff"
+                        }
+                    },
+                    "widgets": {
+                        "BAR_CHART_WIDGET_COMPONENT": {
+                            "barColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ],
+                            "brushStroke": "#25a5a3",
+                            "legendColor": "#000000"
+                        },
+                        "BUTTON_WIDGET_COMPONENT": {
+                            "backgroundColor": "#f5f5f5",
+                            "backgroundHoverColor": "#c2c2c2",
+                            "borderColor": "#cccccc",
+                            "fontColor": "#000000"
+                        },
+                        "FILTERABLE_LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "FORM_WIDGET_COMPONENT": {
+                            "cardBackgroundColor": "#f5f5f5",
+                            "fontColor": "#000000",
+                            "sliderColor": "#6E8592",
+                            "titleColor": "#000000",
+                            "toggleColor": "#6E8592"
+                        },
+                        "GOOGLE_MAP_WIDGET_COMPONENT": {
+                            "mapTheme": ""
+                        },
+                        "GROUPING_LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "LINE_CHART_WIDGET_COMPONENT": {
+                            "brushStroke": "#25a5a3",
+                            "legendColor": "#000000",
+                            "lineColors": [
+                                {
+                                    "stroke": "#6E8592"
+                                },
+                                {
+                                    "stroke": "#6E93A8"
+                                },
+                                {
+                                    "stroke": "#DBA5A8"
+                                },
+                                {
+                                    "stroke": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#25a5a3",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "PIE_CHART_WIDGET_COMPONENT": {
+                            "cells": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "RADIAL_GAUGE_WIDGET_COMPONENT": {
+                            "backgroundColor": "#c2c2c2",
+                            "progressColor": "#25a5a3"
+                        },
+                        "SPEEDOMETER_WIDGET": {
+                            "arrowColor": "#000000",
+                            "sectionColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "TEXT_WIDGET_COMPONENT": {
+                            "fontColor": "#000000",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "TOGGLE_WIDGET": {
+                            "backgroundColor": "#c2c2c2",
+                            "fontColor": "#000000",
+                            "offColor": "#ffffff",
+                            "onColor": "#25a5a3"
+                        }
+                    }
+                }
+            },
+            "palette": {
+                "darkPrimary": "#c2c2c2",
+                "darkSecondary": "#1e8482",
+                "defaultPrimary": "#f5f5f5",
+                "defaultSecondary": "#25a5a3",
+                "lightPrimary": "#ffffff",
+                "lightSecondary": "#92d2d1",
+                "primaryText": "#000000",
+                "secondaryText": "#000000"
+            }
+        },
+        "upgradesPerformed": {
+            "flyoutTitleUpgrade": true,
+            "headerBrandUpgrade": true,
+            "headerTitleUpgrade": true,
+            "widgetResizeUpgrade": true
+        },
+        "widgets": {
+            "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7": {
+                "externalScripts": [],
+                "id": "3b4245ee-a9b9-4fb5-80b3-6a157e4b2fe7",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#25a5a3",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": null,
+                        "id": "d137dff9-171e-4bba-8019-9ac78fb77a48",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "\nconsole.log(JSON.stringify(Object.assign({},this.widget,{\"floor\":26})));\ndatasources.currentData.settings().payload=JSON.stringify({description: this.widget.description,\"floor\":26});\ndatasources.currentData.sendData({description:this.widget.description,\"floor\":26});\nreturn this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "9dc0d9b0-2d12-4ac4-91fc-9b2bb1f36a94",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if(this.datasource === undefined){return;}\nvar ddo = [];\nvar len = this.datasource.results.length;\nfor(var i = 0; i \u003c len; i++){\n    ddo.push({\"label\": this.datasource.results[i] , \"value\": {description: this.datasource.results[i]}});\n}\nreturn ddo;"
+                        }
+                    },
+                    "titleColor": "#000000",
+                    "trackingColumnName": "description"
+                },
+                "tab": null,
+                "type": "LIST_WIDGET_COMPONENT"
+            },
+            "3d8a3389-d25f-435d-b608-db2a396905fb": {
+                "externalScripts": [],
+                "id": "3d8a3389-d25f-435d-b608-db2a396905fb",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "fc67e22e-a090-404c-a8cf-79afe66f8d1a",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": "html,body,#wrapper {\n        height:100%;\n        margin:0;\n        padding:0;\n    }\n    #dataMap {\n        position:relative;\n    }",
+                                "HTML": "\u003ccanvas id=\"dataMap\"\u003e\u003c/canvas\u003e",
+                                "JavaScript": "//JavaScript\n//Global Initialization\nif (!ClearBlade.properties) {\n    ClearBlade.properties = {\n        allowCoordinateUpdates: false,\n        databoxHeight: 15,\n        databoxWidth: 60,\n        imgURL: \"https://s3.amazonaws.com/uploads.hipchat.com/76688/4619737/itJvIwLJHDaYHk5/26th%20floor.png\",\n        primary_display_textcolor: \"#000000\",\n        showSensorName: false,\n        dataTextStyle: \"bold 12px Verdana\",\n        deviceTextStyle: \"bold 10px Verdana\",\n        ds_sensorGroup: \"SensorGroup\",\n        ds_xy: \"updateSensorCoordinates\",\n        dsCurrent: \"currentData\",\n        dsSensorGroup: \"SensorGroup\",\n        SCALE: 1,\n        blockUpdates: false\n    };\n}\n\nClearBlade.properties.currentData = this.datasource;\nvar stage;\n\nvar calculateAspectRatioFit = function(srcWidth, srcHeight, maxWidth, maxHeight) {\n    var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);\n    var rtnWidth = srcWidth * ratio;\n    var rtnHeight = srcHeight * ratio;\n    return { width: rtnWidth, height: rtnHeight };\n};\n\nvar renderWidget = function() {\n    drawCanvas();\n};\n\nwindow.addEventListener('resize', function(event) {\n    drawCanvas();\n});\n\nvar drawCanvas = function() {\n    stage = new createjs.Stage(\"dataMap\");\n    stage.removeAllChildren();\n    stage.enableMouseOver(5); //Required for enabling mouseover events\n    var bgImg = document.createElement(\"img\");\n    //Hack to make the sizing work to the HTMLWidget size\n    stage.canvas.width = stage.canvas.parentElement.parentElement.parentElement.parentElement.clientWidth;\n    stage.canvas.height = stage.canvas.parentElement.parentElement.parentElement.parentElement.clientHeight;\n    bgImg.src = ClearBlade.properties.imgURL;\n    bgImg.onload = function() {\n        var bg = new createjs.Bitmap(bgImg);\n        var backgroundImageSize = calculateAspectRatioFit(bgImg.width, bgImg.height, stage.canvas.width, stage.canvas.height);\n        console.log(\"SCALE:\" + backgroundImageSize.width / bgImg.width);\n        ClearBlade.properties.SCALE = backgroundImageSize.width / bgImg.width;\n        bg.scaleX = backgroundImageSize.width / bgImg.width;\n        bg.scaleY = backgroundImageSize.width / bgImg.width;\n        stage.removeAllChildren();\n        stage.addChild(bg);\n        drawData();\n        if (!ClearBlade.properties.blockUpdates)\n            stage.update();\n    };\n\n};\n\nvar drawData = function() {\n    //draw the icons\n    if (ClearBlade.properties.currentData !== undefined) {\n        for (i = 0; i \u003c ClearBlade.properties.currentData.results.length; i++) {\n            drawDataWidget(ClearBlade.properties.currentData.results[i]);\n        }\n    }\n};\n\nvar drawDataWidget = function(textObj) {\n    var deviceDetailsContainer;\n    var boxheight = ClearBlade.properties.databoxHeight;\n    var boxwidth = ClearBlade.properties.databoxWidth;\n    stage.mouseMoveOutside = false;\n    var shape = new createjs.Shape();\n    var wcMain = new createjs.Container();\n    var dataPointContainer = new createjs.Container();\n    //Create Container for displaying value\n    shape.graphics.beginStroke(\"black\").beginFill(textObj.backgroundColor).drawRect(0, 0, boxwidth, boxheight);\n    var dv = \"\";\n    if (isNaN(textObj.present_value))\n        dv = textObj.present_value;\n    else\n        dv = parseFloat(textObj.present_value).toFixed(2);\n    //Value Object\n    var valueText = new createjs.Text(dv, ClearBlade.properties.dataTextStyle, ClearBlade.properties.primary_display_textcolor);\n    valueText.textAlign = \"center\";\n    valueText.textBaseline = \"middle\";\n    valueText.x = boxwidth - boxwidth / 2;\n    valueText.y = boxheight - boxheight / 2;\n    dataPointContainer.addChild(shape, valueText);\n    //dataPointContainer.y = boxheight * i;\n    wcMain.addChild(dataPointContainer);\n    //Device Name Object\n    deviceDetailsContainer = new createjs.Text(textObj.name, ClearBlade.properties.deviceTextStyle, ClearBlade.properties.primary_display_textcolor);\n    deviceDetailsContainer.textAlign = \"center\";\n    deviceDetailsContainer.visible = ClearBlade.properties.showSensorName;\n    deviceDetailsContainer.x = (boxwidth - boxwidth / 2);\n    deviceDetailsContainer.y = (boxheight - boxheight / 2) + 7;\n    wcMain.addChild(deviceDetailsContainer);\n\n    wcMain.name = textObj.name;\n    wcMain.x = textObj.x * ClearBlade.properties.SCALE;\n    wcMain.y = textObj.y * ClearBlade.properties.SCALE;\n    wcMain.deviceData = textObj;\n    stage.addChild(wcMain);\n    if (ClearBlade.properties.allowCoordinateUpdates) {\n        wcMain.on(\"pressmove\", function(evt) {\n            ClearBlade.properties.blockUpdates = true; //Block updating the view (causes a redraw)\n            evt.currentTarget.x = evt.stageX;\n            evt.currentTarget.y = evt.stageY;\n            this.children[(this.children.length - 1)].visible = true;\n            stage.update();\n        });\n\n        wcMain.on(\"pressup\", function(evt) {\n            if (ClearBlade.properties.allowCoordinateUpdates) {\n                ClearBlade.properties.blockUpdates = false;\n                evt.currentTarget.x = evt.stageX;\n                evt.currentTarget.y = evt.stageY;\n                this.children[(this.children.length - 1)].visible = ClearBlade.properties.showSensorName;\n                stage.update();\n                datasources[ClearBlade.properties.ds_xy].sendData({ \"name\": this.name, \"x\": evt.currentTarget.x / ClearBlade.properties.SCALE, \"y\": evt.currentTarget.y / ClearBlade.properties.SCALE });\n            }\n        });\n    } else {\n        wcMain.on(\"click\", function(evt) {\n\n            datasources[ClearBlade.properties.ds_sensorGroup].sendData({ \"floor\": this.deviceData.floor, \"group\": this.deviceData.groupid });\n        });\n    }\n\n    wcMain.on(\"mouseover\", function(evt) {\n        this.children[(this.children.length - 1)].visible = true;\n        stage.update();\n    });\n    wcMain.on(\"mouseout\", function(evt) {\n        this.children[(this.children.length - 1)].visible = false;\n        stage.update();\n    });\n    //stage.update();\n};\n\nhead.js([\"https://code.createjs.com/easeljs-0.8.2.min.js\"], renderWidget);"
+                            }
+                        }
+                    }
+                },
+                "tab": "83f95d66-34c2-4205-9f54-93a4fc7f47c1",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "5a761755-a6c0-47e2-bfe1-69b117868954": {
+                "externalScripts": [],
+                "id": "5a761755-a6c0-47e2-bfe1-69b117868954",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#25a5a3",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "da74c7b1-e550-4384-90ce-43b6c06fb14c",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "datasources.currentData.settings().payload=JSON.stringify(Object.assign({},this.widget,datasources.SensorGroup.latestData()));\nreturn this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "force_data": null,
+                        "value": "return [{\"label\": \"Floor 26\", \"value\":{\"floor\": \"26\"}},{\"label\": \"Floor 27\", \"value\":{\"floor\": \"27\"}}];"
+                    },
+                    "titleColor": "#000000",
+                    "trackingColumnName": "floor"
+                },
+                "tab": null,
+                "type": "LIST_WIDGET_COMPONENT"
+            },
+            "6e618d66-055c-4c06-a63d-4432c9fe4162": {
+                "externalScripts": [],
+                "id": "6e618d66-055c-4c06-a63d-4432c9fe4162",
+                "props": {
+                    "allowCreate": true,
+                    "allowDelete": true,
+                    "allowEdit": true,
+                    "allowOnOff": true,
+                    "name": "Rule"
+                },
+                "tab": "7ed4e655-d1d9-4510-bd4e-902981f3272f",
+                "type": "RULE_BUILDER_WIDGET"
+            },
+            "8c6c4b8e-1486-4ac1-a04b-0d80b6856952": {
+                "externalScripts": [],
+                "id": "8c6c4b8e-1486-4ac1-a04b-0d80b6856952",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "cc2064a7-9cf5-4a50-9443-c96de11e3fea",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".x-small {\n    font-size: 10px;\n}\n\n.btn-xs{\n    line-height:0.25rem;\n}\n\ntable{\n    padding: 0;\n    margin: 0;\n}\n\ninput[type=\"numbers\"] {\n   height: 12px;\n   font-size: 10px;\n   line-height: 14px;\n}\n\n.table td {\n    padding: 0;\n    width: 100%;\n}\n",
+                                "HTML": "\u003cdiv id=\"listDiv\"\u003e\u003c/div\u003e\n",
+                                "JavaScript": "//head.load(\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\");\nself = this;\nvar incrementerControl = function(defaultValue) {\n    var ic='\u003cinput type=\"numbers\" class=\"text-right\" value=\"' + parseFloat(defaultValue).toFixed(2) + '\"\u003e';\n    return ic;\n};\n\nvar aiControl = function(defaultValue) {\n    var ai = '\u003cselect class=\"\"\u003e';\n    switch (defaultValue) {\n        case 'active':\n            ai += '\u003coption selected\u003eactive\u003c/option\u003e';\n            ai += '\u003coption\u003einactive\u003c/option\u003e';\n            break;\n        default:\n            ai += '\u003coption\u003eactive\u003c/option\u003e';\n            ai += '\u003coption selected\u003einactive\u003c/option\u003e';\n    }\n    ai += '\u003c/select\u003e';\n    return ai;\n};\n\nvar isNumeric = function(n) {\n    return !isNaN(parseFloat(n)) \u0026\u0026 isFinite(n);\n};\n\nvar renderWidget=function() {\n    var ld;\n    var ds = self.datasource;\n    var tmp = \"\";\n    ld = document.getElementById(\"listDiv\");\n    if (ds.results) {\n        tmp = \"\u003cdiv\u003eGroup ID \" + ds.results[0].groupid + \"\u003cbutton type='button' class='btn btn-primary btn-xs float-right'\u003eSave Changes\u003c/button\u003e\u003c/div\u003e\";\n        tmp += \"\u003ctable class='table table-condensed table-striped table-hover table-responsive x-small'\u003e\";\n        for (var i = 0; i \u003c ds.results.length; i++) {\n            tmp += \"\u003ctr\u003e\u003ctd\u003e\" + ds.results[i].description + \"\u003c/td\u003e\u003ctd class='text-xs-right text-right'\u003e\";\n            if (isNumeric(ds.results[i].present_value)) {\n                tmp += incrementerControl(ds.results[i].present_value);\n            } else {\n                tmp += aiControl(ds.results[i].present_value);\n            }\n            tmp += \"\u003c/td\u003e\u003c/tr\u003e\";\n        }\n        tmp += \"\u003c/table\u003e\";\n        ld.innerHTML = tmp;\n        $('.selectpicker').selectpicker();\n    }\n};\n\nhead.load([\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css\"]);\nhead.js([\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\", \"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js\"], renderWidget);\n"
+                            }
+                        }
+                    }
+                },
+                "tab": "dd9ded02-1f93-44a7-b6ca-53a26d862a5e",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "a036d71e-19e4-4925-b1c3-a62e28c79944": {
+                "externalScripts": [],
+                "id": "a036d71e-19e4-4925-b1c3-a62e28c79944",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "6a4dcc91-7ab9-4e6b-9c8b-d42fafd251a8",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                                "HTML": "\u003cdiv class=\"text-center underline\"\u003e\n  \u003ch2\u003eHTML Widget\u003c/h2\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\n"
+                            }
+                        }
+                    }
+                },
+                "tab": "c4e050e8-e97f-4b07-a5a5-2317ea1ae4ba",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "brand": {
+                "externalScripts": [],
+                "id": "brand",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "da74c7b1-e550-4384-90ce-43b6c06fb14c",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource.floor)\n    return \"Floor \" + this.datasource.floor;\nelse\n    return \"Floor 26\";"
+                        }
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "c1b80427-1eba-4e49-a75b-4bed39c882e5": {
+                "externalScripts": [],
+                "id": "c1b80427-1eba-4e49-a75b-4bed39c882e5",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#ffffff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "d137dff9-171e-4bba-8019-9ac78fb77a48",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return \"Device \" + this.datasource.description"
+                        }
+                    }
+                },
+                "tab": null,
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "flyoutTitle": {
+                "externalScripts": [],
+                "id": "flyoutTitle",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 30,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return portalTitle"
+                    }
+                },
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "title": {
+                "externalScripts": [],
+                "id": "title",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return \"Building HVAC Monitor\""
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            }
+        }
+    },
+    "description": "",
+    "last_updated": "03 Apr 18 12:47 UTC",
+    "name": "HVAC Monitor",
+    "system_key": "a4e4eca90be28397ecefd4b0c39d01",
+    "type": "v2"
+}
