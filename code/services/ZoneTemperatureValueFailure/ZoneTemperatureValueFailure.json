@@ -1,0 +1,13 @@
+{
+    "current_version": 8,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "true",
+    "name": "ZoneTemperatureValueFailure",
+    "params": [],
+    "permissions": {
+        "Anonymous": 1,
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "ZoneTemperatureValueFailure.js"
+}
