@@ -1,0 +1,16 @@
+{
+    "current_version": 3,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "true",
+    "name": "updateSensorFloorPlanCoordinates",
+    "params": [],
+    "permissions": {
+        "Administrator": 1,
+        "Anonymous": 1,
+        "Authenticated": 0,
+        "portalAdmin": 1,
+        "portalUser": 1
+    },
+    "run_user": "",
+    "source": "updateSensorFloorPlanCoordinates.js"
+}
