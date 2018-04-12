@@ -1,0 +1,385 @@
+{
+    "Description": "",
+    "ID": "a8e4eca90b82eba092e4f781dc50",
+    "Name": "portalAdmin",
+    "Permissions": {
+        "AllCollections": {
+            "Level": 0
+        },
+        "CodeServices": [
+            {
+                "Level": 1,
+                "Name": "RB_TemperatureRules_ZoneTemp_Service_0",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "currentZoneTemp",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "getDeviceHistory",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 0,
+                "Name": "getDevices",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "getInactiveDevices",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "getParentDevices",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "getParentList",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "getSensorsByFloor",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "getZoneSetPointsFloor26",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 0,
+                "Name": "getZoneTempHistory",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "getcurrentFloorZoneTemps",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "getcurrentZoneTempsFloor26",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "getcurrentZoneTempsFloor27",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "loadSensorDataHistory",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "loadSensorHistoryByDescription",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "loadSensorList",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 0,
+                "Name": "loadTempSensors",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 0,
+                "Name": "portalLoadRange",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "portalUpdateFloorPlanCoordinates",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "portal_SensorTypes",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "readCurrentData",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "readCurrentDataByGroupID",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "readPowerSensorTypes",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "readSensorTypes",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 0,
+                "Name": "syncDevicesToMetaData",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "testCode",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "updateSensorConfiguration",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "updateSensorFloorPlanCoordinates",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "zoneTemp26East",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "zoneTemp26North",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "zoneTemp26South",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "zoneTemp26West",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "zoneTemp27East",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "zoneTemp27North",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "zoneTemp27South",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 1,
+                "Name": "zoneTemp27West",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            }
+        ],
+        "Collections": [
+            {
+                "Columns": [],
+                "ID": "80a6f9910ba8abe8f39fd58fb37e",
+                "Items": [],
+                "Level": 1,
+                "Name": "80a6f9910ba8abe8f39fd58fb37e"
+            },
+            {
+                "Columns": [],
+                "ID": "8ef99a900ba693aef09dd4858b76",
+                "Items": [],
+                "Level": 1,
+                "Name": "8ef99a900ba693aef09dd4858b76"
+            },
+            {
+                "Columns": [],
+                "ID": "aee4eca90bae8dde99ac9a90929b01",
+                "Items": [],
+                "Level": 1,
+                "Name": "BACnet Device Data"
+            },
+            {
+                "Columns": [],
+                "ID": "a4ecec9d0bae8fb1f5e182ba92f301",
+                "Items": [],
+                "Level": 5,
+                "Name": "a4ecec9d0bae8fb1f5e182ba92f301"
+            },
+            {
+                "Columns": [],
+                "ID": "aa83d2900ba28adf9de38ad99971",
+                "Items": [],
+                "Level": 1,
+                "Name": "aa83d2900ba28adf9de38ad99971"
+            },
+            {
+                "Columns": [],
+                "ID": "ac83d2900b8eeaa5de94ffcbc212",
+                "Items": [],
+                "Level": 1,
+                "Name": "ac83d2900b8eeaa5de94ffcbc212"
+            },
+            {
+                "Columns": [],
+                "ID": "c0f2ba900bace1a6d6c4e0969f4d",
+                "Items": [],
+                "Level": 1,
+                "Name": "c0f2ba900bace1a6d6c4e0969f4d"
+            },
+            {
+                "Columns": [],
+                "ID": "c0fed1900bacafd9c1a1d4a2cbf101",
+                "Items": [],
+                "Level": 1,
+                "Name": "c0fed1900bacafd9c1a1d4a2cbf101"
+            },
+            {
+                "Columns": [],
+                "ID": "e2b4f9910b80f5bcd698a5bcef24",
+                "Items": [],
+                "Level": 1,
+                "Name": "e2b4f9910b80f5bcd698a5bcef24"
+            },
+            {
+                "Columns": [],
+                "ID": "e4b4f9910bfe84a2d992dec1d911",
+                "Items": [],
+                "Level": 5,
+                "Name": "e4b4f9910bfe84a2d992dec1d911"
+            },
+            {
+                "Columns": [],
+                "ID": "e8e5ec9d0bc4f79ec193eb92b0fa01",
+                "Items": [],
+                "Level": 1,
+                "Name": "e8e5ec9d0bc4f79ec193eb92b0fa01"
+            },
+            {
+                "Columns": [],
+                "ID": "f4d99b900b92abc587c6eae8a902",
+                "Items": [],
+                "Level": 1,
+                "Name": "f4d99b900b92abc587c6eae8a902"
+            },
+            {
+                "Columns": [],
+                "ID": "bae4eca90bc4b79edb85ada3939701",
+                "Items": [],
+                "Level": 5,
+                "Name": "sensorMetaData"
+            }
+        ],
+        "Deployments": {
+            "Level": 0
+        },
+        "DevicesList": {
+            "Level": 5
+        },
+        "EdgesList": {
+            "Level": 0
+        },
+        "MsgHistory": {
+            "Level": 0
+        },
+        "Portals": [
+            {
+                "Level": 0,
+                "Name": "FloorPlan",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "Hudson Yards Building 10 Floor 0",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "Sensor Administration",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "T1",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "Bacnet Devices",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "HY27Clone",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "Hudson Yards Building 10 Floor 27",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 7,
+                "Name": "Sensor Monitoring",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "Hudson Yards Building 10 Floor 26",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "HY26Clone",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "Hudson Yards Building 10 Floor 1",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "Hudson Yards Power Dashboard",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "HYAdditionalData",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            },
+            {
+                "Level": 15,
+                "Name": "Dev HVAC Monitor",
+                "SystemKey": "a4e4eca90be28397ecefd4b0c39d01"
+            }
+        ],
+        "Push": {
+            "Level": 0
+        },
+        "SystemServices": {
+            "Level": 15
+        },
+        "Timers": {
+            "Level": 0
+        },
+        "Topics": [],
+        "Triggers": {
+            "Level": 0
+        },
+        "UsersList": {
+            "Level": 0
+        }
+    }
+}
